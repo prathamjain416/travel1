@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-white;
+  }
+}
+
+@layer components {
+  .hover-link {
+    @apply relative overflow-hidden;
+  }
+  
+  .hover-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-px bg-current transition-all duration-300;
+  }
+  
+  .hover-link:hover::after {
+    @apply w-full;
+  }
+}
+
+/* Video background animation */
+.video-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  animation: gradientFlow 15s ease infinite;
+  z-index: 1;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Loading animation */
+.loading-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-logo {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: logoReveal 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.loading-logo.complete {
+  animation: logoComplete 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.loading-line {
+  position: absolute;
+  bottom: 25vh;
+  width: 200px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.loading-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+@keyframes logoReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes logoComplete {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1) translateY(-20px);
+  }
+}
+
+/* Gallery Swiper styles */
+.gallery-swiper {
+  padding-bottom: 40px !important;
+}
+
+.gallery-swiper .swiper-button-next,
+.gallery-swiper .swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.gallery-swiper .swiper-button-next::after,
+.gallery-swiper .swiper-button-prev::after {
+  font-size: 16px !important;
+  color: #111827 !important;
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  background: #111827 !important;
+}
+
+.video-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.scale-video {
+  transform-origin: center;
+  animation: scaleVideo 20s ease-in-out infinite alternate;
+}
+
+@keyframes scaleVideo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Swiper styles */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  color: #111827 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #111827 !important;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+  
+  .loading-line {
+    width: 160px;
+    bottom: 20vh;
+  }
+}
+
+/* Founders section styles */
+#founders {
+  perspective: 1000px;
+}
+
+#founders .milestone-card {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#founders path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+#founders .milestone-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#founders .milestone-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
