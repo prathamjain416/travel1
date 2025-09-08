@@ -25,6 +25,72 @@ export interface FixedDeparture {
 
 export const fixedDepartures: FixedDeparture[] = [
   {
+    id: 1,
+    name: 'EUROPEAN DELIGHT WITH KITCHEN CARAVAN',
+    location: 'Netherlands, Germany, Switzerland, Austria, Italy, Vatican, France',
+    image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=2000',
+    description: 'Experience the ultimate European journey with our signature Kitchen Caravan service. Travel across Europe\'s most iconic destinations with the warmth of Maharaj-cooked Indian meals, specially curated for Veg & Jain travelers. This comprehensive 15-night tour covers 7 countries, featuring visits to the Eiffel Tower, Seine Cruise, Night Illumination in Paris, Frankfurt City Stopover in Germany, Jungfraujoch Top of Europe in Switzerland, Innsbruck & Swarovski Crystal World in Austria, and the Colosseum, Vatican City, and Trevi Fountain in Rome.',
+    shortDescription: 'A journey of flavours & sights across 7 European countries with Kitchen Caravan.',
+    date: 'April 15, May 02, 05, 08, 18, 28, June 05, 22, July 06, 24, August 05, 23, 2026',
+    duration: '15 Nights / 16 Days',
+    priceDetails: {
+      doubleTriple: '₹3,60,000',
+      childWithBed: '₹3,00,000 (Per child below 12 years with bed sharing parents room)',
+      childWithoutBed: ['₹2,35,000 (Per child below 06 years without bed sharing parents room)']
+    },
+    priceIncludes: [
+      'Return Flights',
+      'Visa + Insurance',
+      '3 & 4-Star Hotels',
+      'AC Luxury Coach',
+      'Hindi/English Tour Manager',
+      'Signature Indian Meals by Kitchen Caravan',
+      'Maharaj-cooked Indian Veg & Jain Meals',
+      'Breakfast + Masala Tea',
+      'Chaat, Punjabi, Indo-Chinese, Kathiyawadi, South Indian specialties',
+      'Packed Meals for Disneyland Paris & Jungfraujoch',
+      'Eiffel Tower visit',
+      'Seine Cruise',
+      'Paris Night Illumination Tour',
+      'Frankfurt City Stopover',
+      'Jungfraujoch Top of Europe',
+      'Innsbruck & Swarovski Crystal World',
+      'Rome Colosseum, Vatican City, Trevi Fountain visits'
+    ]
+  },
+  {
+    id: 2,
+    name: 'EUROPEAN DELIGHT WITH KITCHEN CARAVAN - SUMMER 2026',
+    location: 'Netherlands, Germany, Switzerland, Austria, Italy, Vatican, France',
+    image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=2000',
+    description: 'A Journey of Flavours & Sights - Travel across Europe\'s most iconic destinations with the warmth of Maharaj-cooked Indian meals, specially curated for Veg & Jain travelers. Experience the signature Kitchen Caravan service featuring authentic Indian cuisine including Chaat, Punjabi, Indo-Chinese, Kathiyawadi, and South Indian specialties.',
+    shortDescription: 'Summer 2026 European adventure with Kitchen Caravan dining experience.',
+    date: 'April 15, May 02, 05, 08, 18, 28, June 05, 22, July 06, 24, August 05, 23, 2026',
+    duration: '15 Nights / 16 Days',
+    priceDetails: {
+      doubleTriple: '₹3,60,000',
+      childWithBed: '₹3,00,000',
+      childWithoutBed: ['₹2,35,000']
+    },
+    priceIncludes: [
+      'Return Flights',
+      'Visa + Insurance', 
+      '3 & 4-Star Hotels',
+      'AC Luxury Coach',
+      'Hindi/English Tour Manager',
+      'Signature Indian Meals by Kitchen Caravan',
+      'Maharaj-cooked Indian Veg & Jain Meals',
+      'Breakfast + Masala Tea',
+      'Chaat, Punjabi, Indo-Chinese, Kathiyawadi, South Indian specialties',
+      'Packed Meals for Disneyland Paris & Jungfraujoch',
+      'Paris: Eiffel Tower, Seine Cruise, Night Illumination Tour',
+      'Germany: Frankfurt City Stopover',
+      'Switzerland: Jungfraujoch Top of Europe',
+      'Austria: Innsbruck & Swarovski Crystal World',
+      'Italy & Vatican: Rome Colosseum, Vatican City, Trevi Fountain'
+    ]
+  },
+  {
     id: 3,
     name: 'UK: LONDON SCOTLAND IRELAND PACKAGE',
     location: 'United Kingdom, Scotland, Ireland',
