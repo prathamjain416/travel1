@@ -28,7 +28,7 @@ export const fixedDepartures: FixedDeparture[] = [
     id: 1,
     name: 'EUROPEAN DELIGHT WITH KITCHEN CARAVAN',
     location: 'Netherlands, Germany, Switzerland, Austria, Italy, Vatican, France',
-    image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=2000',
+    image: 'https://images.unsplash.com/photo-1603808523691-a2f471d415f0?q=80&w=1195&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'Experience the ultimate European journey with our signature Kitchen Caravan service. Travel across Europe\'s most iconic destinations with the warmth of Maharaj-cooked Indian meals, specially curated for Veg & Jain travelers. This comprehensive 15-night tour covers 7 countries, featuring visits to the Eiffel Tower, Seine Cruise, Night Illumination in Paris, Frankfurt City Stopover in Germany, Jungfraujoch Top of Europe in Switzerland, Innsbruck & Swarovski Crystal World in Austria, and the Colosseum, Vatican City, and Trevi Fountain in Rome.',
     shortDescription: 'A journey of flavours & sights across 7 European countries with Kitchen Caravan.',
     date: 'April 15, May 02, 05, 08, 18, 28, June 05, 22, July 06, 24, August 05, 23, 2026',
