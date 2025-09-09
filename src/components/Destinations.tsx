@@ -224,6 +224,34 @@ Kedarnath, one of the four sacred shrines of the Char Dham pilgrimage, is nestle
 The centerpiece of this holy town is the Kedarnath Temple, an ancient structure believed to have been built in the 8th century. Surrounded by towering peaks and the serene Mandakini River, the temple is a blend of spirituality and breathtaking scenery, making it a perfect destination for both pilgrims and trekkers.
 
 Accessible mainly by a scenic trek from Gaurikund, Kedarnath offers an unforgettable experience of devotion and nature's splendor.`
+  },
+  {
+    id: 17,
+    name: 'Jawai Leopard Safari',
+    location: 'Jawai, Rajasthan',
+    image: 'https://images.unsplash.com/photo-1610331968468-fdc0f47dfdbb?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description: `Welcome to Jawai Leopard Safari: India's Leopard Capital
+
+Jawai, located in the Pali district of Rajasthan, is renowned as one of India's premier leopard spotting destinations. This unique landscape of granite hills, seasonal rivers, and rural villages offers an extraordinary wildlife experience where leopards coexist peacefully with local communities.
+
+The Jawai region is home to one of India's highest concentrations of leopards, making it a paradise for wildlife enthusiasts and photographers. Unlike other wildlife destinations, the leopards here are remarkably comfortable around humans, offering excellent viewing opportunities throughout the day.
+
+Stay at the luxurious Praveg Resort, which offers world-class accommodation options including:
+
+**Accommodation Options:**
+• Caves with Pool - ₹55,000 per night
+• Safari Tent - ₹39,400 per night  
+• Caves - ₹52,000 per night
+
+**Package Inclusions:**
+• Daily breakfast
+• Pick up & drop service (Pali-Pali)
+• Leopard safari experiences
+• Comfortable accommodation at Praveg Resort
+
+The safari experience takes you through the rocky terrain where leopards rest on granite boulders during the day. The area is also home to various other wildlife including crocodiles in the Jawai Dam, numerous bird species, and the occasional sloth bear.
+
+Experience the thrill of spotting these magnificent big cats in their natural habitat while enjoying the warm hospitality of Rajasthan and the luxury amenities of Praveg Resort.`
   }
 ];
 
